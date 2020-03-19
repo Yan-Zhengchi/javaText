@@ -13,15 +13,13 @@ public class Test3 {
      */
     public static void main(String[] args) {
         ArrayList<Student> students = new ArrayList<>();
+
         for (int i = 0; i <40 ; i++) {
             students.add(new Student(i, (new Random().nextInt(50)+50)));
         }
-        students.sort(new Comparator<Student>() {
-            @Override
-            public int compare(Student s1, Student s2) {
-                return s2.getScore()-s1.getScore();
-            }
-        });
+
+        students.sort((o1,o2)->o2.getScore()-o1.getScore());
+
         for (Student student : students) {
             System.out.println("学号为"+student.getNum()+"的学生成绩为"+student.getScore());
         }

@@ -1,7 +1,9 @@
 package March_19th;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 
 public class Test4 {
     /**
@@ -10,23 +12,18 @@ public class Test4 {
      *   将集合进行排序，并将排序后的结果打印在控制台上
      */
     public static void main(String[] args) {
-        ArrayList<String> arrayList = new ArrayList<>();
-        arrayList.add("apple");
-        arrayList.add("grape");
-        arrayList.add("banana");
-        arrayList.add("pear");
-        arrayList.sort(new Comparator<String>() {
-            @Override
-            public int compare(String o1, String o2) {
-                return o2.compareTo(o1);
-            }
-        });
+        List<String> list = new ArrayList<>();
+        list.add("apple");
+        list.add("grape");
+        list.add("banana");
+        list.add("pear");
+        list.sort((o1,o2)->o1.compareTo(o2));
         System.out.println("最大的是");
-        System.out.println(arrayList.get(0));
+        System.out.println(list.get(3));
         System.out.println("最小的是");
-        System.out.println(arrayList.get(3));
+        System.out.println(list.get(0));
         System.out.println("排序结果");
-        for (String s : arrayList) {
+        for (String s : list) {
             System.out.println(s);
         }
     }
