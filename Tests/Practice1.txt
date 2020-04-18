@@ -1,0 +1,141 @@
+1.手动输入任意三个数，求三个数的和，差
+
+
+int[] ints = new int[3];
+for(int i = 0;i < 3 ;i++){
+Scanner sc=new  Scanner(System.in);
+System.out.println("请输人第一个数");
+int ints[i] = sc.nextInt();
+int sum = ints[0] + ints[1] + ints[2]
+int difference = ints[0] - ints[1] - ints[2]
+
+
+
+
+2.求BCD+2F的值
+  BCD
+   2F
+------
+  3120+47=3167
+  3167 = C5F（H）
+
+3.10011101  转换成八进制  和十六进制
+235（O)   //010 011 101
+9D(H)     //1001 1101
+
+
+4.变量的特点
+在程序运行期间，随时可能产生一些临时数据，
+应用程序会将这些数据保存在一些内存单元中，
+每个内存单元都用一个标识符来标识。这些内存单元被称为变量，
+定义的标识符就是变量名，内存单元中存储的数据就是变量的值。
+ 
+
+6. 基本类型的运算）一家商场在举行打折促销，所有商品都进行8 折优惠。一
+位程序员把这个逻辑写成：
+short price = ...; // 先计算出原价
+short realPrice = price * 8 / 10; //再计算出打折之后的价格
+
+问：这段代码是否正确？
+如果正确，假设price  为100 ，那计算之后的
+realPrice值为多少？如果不正确，应该怎么改正？
+short 改成double
+realPrice = 80
+
+
+
+
+7.找错
+	void public main(){   //public static void main(String[] args)
+
+			int i=1,j;  // 变量未初始化
+
+			float f1=0.1;  //f
+			float f2=123;   //f
+			long  l1=123141L,l2=88888888888; //88888888888L
+			double d1=2e20,d2=124;  //2.0e20    124.0
+			byte b1=1,b2=2,b3=129;//b3超出范围
+			j=j+10;
+			i=i/10;
+			i=i*0.1; //表达式的结果和i的类型不匹配
+
+			char c1='a',c2=125;
+
+			byte b=b1-b2;
+
+			char c=c1+c2-1;    //强制类型转换成char类型
+			float f3=f1+f2;     //强制类型转换成double类型
+
+			float f4=f1+f2*0.1;  //强制类型转换成double类型
+
+			double d=d1*i+j;    
+
+			float f=(float)(d1*5+d2); //超出float变量的范围
+	
+		}
+
+8.已知a,b均是整型变量，写出将a,b两个变量中的值互换的程序
+int   a=2;
+int  b=3;
+int  c=a;
+
+a=b;
+b=c;
+
+
+a=a+b;
+b=a-b;
+a=a-b;
+
+a = a^b;
+b = a^b;
+a = a^b;
+
+
+
+
+9.写出下列变量a和b的运算结果。
+
+int a = 9 / 3;      //3
+
+int b = 9 % 2;      //1
+
+
+
+
+10.判断代码是否有错误，如有，请修改。
+
+float a = 2.1; //加f
+
+float b = (double)20.9;//double改成float
+
+int b3 = 210.9f +2.51;//int改成double
+
+int b4 = (int)20.9 + (int)2.51;//没错
+
+
+12.给定一个任意的大写字母A~Z，转换为小写字母
+
+char a = ‘A’;
+        char b = (char)(a+32);
+13.java的命名规范
+       驼峰式命名法，不得用Java关键字和保留字，必须用字母或下划线开头*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
